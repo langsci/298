@@ -34,9 +34,8 @@ main.snd: main.bbl
 	sed -i 's/.*Embassy.*//' main.adx
 	sed -i 's/.*Association.*//' main.adx
 	sed -i 's/.*Commission.*//' main.adx
-	sed -i 's/.*ASALE*//' main.adx
-	sed -i 's/.*Estudis*//' main.adx
-	sed -i 's/.*RAE*//' main.adx
+	sed -i 's/.*Institute*//' main.adx
+	sed -i 's/.*Worldbank*//' main.adx
 	sed -i 's/\\MakeCapital//' main.adx
 	python3 fixindex.py
 	mv mainmod.adx main.adx

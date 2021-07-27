@@ -1,123 +1,27 @@
-
-% \usepackage{lscape} 
-% \usepackage{apacite}
-
-% \newcommand{\posscitet}[1]{\citeauthor{#1}'s (\citeyear{#1})}
-\newcommand{\sposscitet}[1]{\citeauthor{#1}' (\citeyear{#1})}
-
-
-%\newcommand{\posscitet}[1]{\citet{#1}'s (\citeyear{#1})}
-%\newcommand{\sposscitet}[1]{\citet{#1}' (\citeyear{#1})}
-
-% \usepackage {natbib}
-% \bibliographystyle{newapa}
-% \bibpunct[:~]{(}{)}{;}{a}{}{}
-% \usepackage{url}
-\usepackage{amssymb}
-\usepackage{fixltx2e}
-\usepackage[bottom]{footmisc}
-\usepackage{slashbox}
-
+% to be deleted
 \usepackage[all]{xy}
+% \usepackage {qtree}
+% \usepackage {nomencl}
+% \makenomenclature
+% =============
 
+%to discuss
+\newcommand{\sposscitet}[1]{\citeauthor{#1}' (\citeyear{#1})}
+\usepackage{enumitem}
+% =============
 
+% to keep
+%counters moved to localcommands
+
+% \usepackage{lscape}
+\usepackage{amssymb}
 \usepackage{soul}
- 
-
 \usepackage{longtable}
+
 \usepackage{multirow}
 \usepackage{multicol}
-
-\usepackage{enumitem}
-\renewcommand{\labelenumi}{\arabic{enumi}.} 
-\renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}}
-
-% \usepackage{hanging}
-
-
-% \usepackage[english]{babel}
-%\usepackage[ansinew]{inputenc}
-% doesn´t work with xelatex, changed to the package below, xltxtra
-
-\usepackage{xltxtra}
-% \defaultfontfeatures{Ligatures=TeX}
-
-\usepackage{pict2e}
-\usepackage{footnote}
-
-\usepackage{supertabular}
-\usepackage{index}
-%\newindex {lang} {ldx}{lnd}{language index}
-%\newindex {aut}{adx}{and}{author index}
-% \usepackage{setspace}
-% \onehalfspacing
-%\usepackage{fancyhdr}
-%\pagestyle{fancy}
-\usepackage{titleps}
-
-% \newpagestyle{main}{
-%     \sethead[Chapter \thechapter][ ][\chaptertitle]  % even
-%             {Section \thesection}{ }{\sectiontitle} % odd
-%     \setfoot[][\thepage][]  % even
-%             {}{\thepage}{}}
-  %\pagestyle{main}
-
-% \headheight 15pt
-
-%
-% \usepackage{graphicx}
-% \graphicspath{{/Users/nadineborchardt/Documents/images/}}
- 
-% \usepackage {tikz}
-
-% \hsize15.5cm
-% \vsize24.7cm
-
-% \usepackage{geometry}
-% \geometry{a4paper, top=35mm, left=35mm, right=35mm, bottom=35mm,
-% headsep=10mm, footskip=12mm}
-
 \usepackage {langsci-gb4e}
-\usepackage {qtree}
-\usepackage {nomencl}
-\makenomenclature
-\usepackage {float}
-
-
-\newcounter{mysub}
-\makeatletter
-\newcommand{\finsub}{\setcounter{mysub}{0}\stepcounter{exx}}
-\newcommand{\exA}{\save@counters\refstepcounter{mysub}\renewcommand{\thexnumi}{A\arabic{mysub}}\@ifnextchar [{\@ex}{\item}\reset@counters}
-\makeatother
-
-\newcounter{mysubN}
-\makeatletter
-\newcommand{\finsubN}{\setcounter{mysubN}{0}\stepcounter{exx}}
-\newcommand{\exN}{\save@counters\refstepcounter{mysubN}\renewcommand{\thexnumi}{N\arabic{mysubN}}\@ifnextchar [{\@ex}{\item}\reset@counters}
-\makeatother
-
-\newcounter{mysubC}
-\makeatletter
-\newcommand{\finsubC}{\setcounter{mysubC}{0}\stepcounter{exx}}
-\newcommand{\exC}{\save@counters\refstepcounter{mysubC}\renewcommand{\thexnumi}{C\arabic{mysubC}}\@ifnextchar [{\@ex}{\item}\reset@counters}
-\makeatother
-
-
-
-
-\usepackage{arydshln}
-
-\usepackage{enumitem}
-\setitemize{leftmargin=*} 
-
-% \usepackage{fontspec}
-
-% \setmainfont{Charis SIL}
-
-\makesavenoteenv{tabular}
-
-%\usepackage{tocloft,calc}
-
-%\renewcommand{\cftchappresnum}{Chapter }
-
-% \usepackage[hypertexnames=false]{hyperref}
+\usepackage{langsci-optional}
+\usepackage{todonotes}
+% \usepackage[disable]{todonotes}
+\usepackage[linguistics,edges]{forest}

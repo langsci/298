@@ -231,11 +231,11 @@
 
 
 %connect two elements with lines
-\newcommand{\connect}[2]{%
-  \tikz[overlay,remember picture]{%
-    \draw[-,thick] (#1) -- (#2) node   {};  %
-  }
-}
+% \newcommand{\connect}[2]{%
+%   \tikz[overlay,remember picture]{%
+%     \draw[-,thick] (#1) -- (#2) node   {};  %
+%   }
+% }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% Experimental feature for pointing out moving things. %%%%
@@ -343,7 +343,7 @@
 \providecommand{\largerpage}[1][1]{\enlargethispage{#1\baselineskip}}
 
 % vertical space to structure tables
-\providecommand{\tablevspace}{\\[-.5em]}
+\newcommand{\tablevspace}{\\[-.5em]}
 
 \providecommand{\biberror}[1]{{\color{red}#1}}
 
